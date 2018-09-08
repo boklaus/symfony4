@@ -1,0 +1,11 @@
+home:
+    path: /
+    controller: App\Controller\GuestBookController::home
+
+comments:
+    path: /comments
+    controller: App\Controller\GuestBookController::fetchAllComments
+
+add_comment:
+    path: /comment/add
+    controller: App\Controller\GuestBookController::addComment

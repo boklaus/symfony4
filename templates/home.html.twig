@@ -1,0 +1,12 @@
+
+{% for comment in comments %}
+    <div>
+        <div>{{ comment.name }}</div>
+        <div>{{ comment.createdAt|date('Y-m-d H:i:s') }}</div>
+        <div>{{ comment.content }}</div>
+    </div>
+{% endfor %}
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
